@@ -1,0 +1,14 @@
+BACK-END  (carpeta finalb/)
+  - Abrir application.properties y poner su usuario/contraseña (y el puerto de MySQL: 3306 o 3307).
+  - Ejecutar: mvnw spring-boot:run   -> http://localhost:8080
+  - Endpoints (GET):
+      /articulos/mostrarActivosFiltro?nombre=martillo
+      /articulos/reporteArticuloCategoria
+      /clientes/reporteClienteFactura
+      /facturas/reporteDetalle
+
+FRONT-END (carpeta frontend/)
+  1) Copiar src/types, src/services, src/utils, src/pages y public/logo.png a su proyecto React+TS.
+  2) npm i jspdf jspdf-autotable exceljs react-router-dom
+  3) Agregar en su router:  <Route path="/reportes" element={<Reportes />} />   (ver src/App.tsx)
+  4) Cambiar public/logo.png por el logo que quiera (debe ser PNG).
